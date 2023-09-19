@@ -1,0 +1,13 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/DemoBankingApp/FileContentIndex/45d7a77c-c20c-4ce7-b79f-46951ccacde4.vsidx
+/.vs/DemoBankingApp/FileContentIndex/b051b93c-f9de-4b61-8615-17189544072c.vsidx
+/.vs/DemoBankingApp/FileContentIndex/read.lock
+/.vs/DemoBankingApp/v17/.futdcache.v2
+/.vs/DemoBankingApp/v17/.wsuo
+/.vs/DemoBankingApp/v17/TestStore/0/000.testlog
+/.vs/DemoBankingApp/v17/TestStore/0/testlog.manifest
+/.vs/slnx.sqlite
+/.vs/VSWorkspaceState.json
