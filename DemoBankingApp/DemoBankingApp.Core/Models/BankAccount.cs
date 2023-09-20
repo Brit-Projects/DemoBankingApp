@@ -6,6 +6,6 @@ namespace DemoBankingApp.Core.Models
         public int AccountId { get; set; }
         public int AccountNumber { get; set; }
         public string SortCode { get; set; }
-        public int SecruityCode { get; set; }      
+        public double Balance { get; set; }    
     }
 }
