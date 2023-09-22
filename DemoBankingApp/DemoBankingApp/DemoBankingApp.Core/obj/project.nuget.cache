@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "Rw7JXS7ESgtHbr4nBo9X0zS03unmQ7FlsIVwZ+FfGXxTaHF76d5JsQQ5lZToHqWZBVw+76P/2NnIVTzVIO4/yw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\fsiema\\source\\repos\\DemoBankingApp\\DemoBankingApp\\DemoBankingApp.Core\\DemoBankingApp.Core.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\fsiema\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
+    "C:\\Users\\fsiema\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\fsiema\\.nuget\\packages\\stripe.net\\42.5.0\\stripe.net.42.5.0.nupkg.sha512",
+    "C:\\Users\\fsiema\\.nuget\\packages\\system.configuration.configurationmanager\\6.0.0\\system.configuration.configurationmanager.6.0.0.nupkg.sha512",
+    "C:\\Users\\fsiema\\.nuget\\packages\\system.drawing.common\\6.0.0\\system.drawing.common.6.0.0.nupkg.sha512",
+    "C:\\Users\\fsiema\\.nuget\\packages\\system.security.accesscontrol\\6.0.0\\system.security.accesscontrol.6.0.0.nupkg.sha512",
+    "C:\\Users\\fsiema\\.nuget\\packages\\system.security.cryptography.protecteddata\\6.0.0\\system.security.cryptography.protecteddata.6.0.0.nupkg.sha512",
+    "C:\\Users\\fsiema\\.nuget\\packages\\system.security.permissions\\6.0.0\\system.security.permissions.6.0.0.nupkg.sha512",
+    "C:\\Users\\fsiema\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
