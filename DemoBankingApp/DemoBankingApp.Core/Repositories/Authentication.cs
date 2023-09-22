@@ -52,6 +52,8 @@ namespace DemoBankingApp.Core.Repositories
 
             Users newUser = SetNewUser(rand.Next(), name, email, password);
             AddUser(newUser);
+            Console.WriteLine($"User added: {newUser.UserName}");
+            return;
         }
 
  
@@ -71,12 +73,14 @@ namespace DemoBankingApp.Core.Repositories
             
 
             var users = GetUsers();
+            bool isAMatch = false;
 
             foreach (Users user in users)
             {
                 if (user.Email == email && user.Password == password)
                 {
                     Console.WriteLine($"Welcome {user.UserName}");
+                    isAMatch = true;
                     break;
                     // todo: check if user has at least one bank account
                         // if yes: Display dashboard
@@ -84,9 +88,17 @@ namespace DemoBankingApp.Core.Repositories
                 }
                 else
                 {
-                    Console.WriteLine("Email or Password do not match");
+                    isAMatch= false;
                 }
             }
+
+
+            if (!isAMatch)
+            {
+                Console.WriteLine("Email or Password do not match");
+            }
+
+            return;
         }
 
         public void getOption(int intInput)
@@ -104,10 +116,12 @@ namespace DemoBankingApp.Core.Repositories
                     LoginUser();
                     break;
                 default:
-                    Console.WriteLine("Invalid option");
+                    Console.WriteLine("please choose one of the options");
                     break;
 
             }
+
+            return;
         }
 
         string welcomeMessage = "Welcome to this bank";
@@ -115,8 +129,6 @@ namespace DemoBankingApp.Core.Repositories
 
         public int GetUserInput(int intInput)
         {
-            Console.WriteLine(optionsMessage);
-
             var userInput = Console.ReadLine();
 
             try
@@ -136,16 +148,15 @@ namespace DemoBankingApp.Core.Repositories
         public void WelcomeUser()
         {
             Console.WriteLine(welcomeMessage);
+            Console.WriteLine(optionsMessage);
 
             var input = 0;
 
-            do
-            {
-                input = GetUserInput(input);
-                getOption(input);
-                Console.WriteLine(input);
+            input = GetUserInput(input);
+            getOption(input);
+  
 
-            } while (input != 1 || input != 2);
+            return;
 
         }
 
