@@ -77,7 +77,7 @@ namespace DemoBankingApp.Core.Repositories
                 if (user.Email == email && user.Password == password)
                 {
                     Console.WriteLine($"Welcome {user.UserName}");
-
+                    break;
                     // todo: check if user has at least one bank account
                         // if yes: Display dashboard
                         // if no: Create account
@@ -143,6 +143,7 @@ namespace DemoBankingApp.Core.Repositories
             {
                 input = GetUserInput(input);
                 getOption(input);
+                Console.WriteLine(input);
 
             } while (input != 1 || input != 2);
 
