@@ -8,4 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = DemoBankingApp.Core
-build_property.ProjectDir = C:\Users\fsiema\source\repos\DemoBankingApp\DemoBankingApp\DemoBankingApp.Core\
+build_property.ProjectDir = C:\Users\fsiema\source\repos\BankAppFromGit-MergingBranch\DemoBankingApp\DemoBankingApp\DemoBankingApp.Core\
