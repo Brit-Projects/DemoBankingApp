@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Rw7JXS7ESgtHbr4nBo9X0zS03unmQ7FlsIVwZ+FfGXxTaHF76d5JsQQ5lZToHqWZBVw+76P/2NnIVTzVIO4/yw==",
+  "dgSpecHash": "1XPWQisQz3Hyqk0UWo0y2OWmQWihieZUMUaAqz7cxj0bM3sUBKx1Qt5cygY6Kc6thR5j6EW4hZELJXw630RMrw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\fsiema\\source\\repos\\DemoBankingApp\\DemoBankingApp\\DemoBankingApp.Core\\DemoBankingApp.Core.csproj",
+  "projectFilePath": "C:\\Users\\fsiema\\source\\repos\\BankAppFromGit-MergingBranch\\DemoBankingApp\\DemoBankingApp\\DemoBankingApp.Core\\DemoBankingApp.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\fsiema\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
     "C:\\Users\\fsiema\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",

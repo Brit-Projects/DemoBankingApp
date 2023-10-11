@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DemoBankingApp.Core", "Demo
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{4ECCB66E-78F7-455B-9FF9-C9111C3D8E5A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoBankingApp.Core.Tests", "DemoBankingApp.Core.Tests\DemoBankingApp.Core.Tests.csproj", "{9DDC6326-02DD-4D2A-AFAC-3BA401F2A37A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DemoBankingApp.Core.Tests", "DemoBankingApp.Core.Tests\DemoBankingApp.Core.Tests.csproj", "{9DDC6326-02DD-4D2A-AFAC-3BA401F2A37A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoBankingApp.Console", "DemoBankingApp.Console\DemoBankingApp.Console.csproj", "{2413F5CC-E796-46F5-9B64-E3967FA83134}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,6 +25,10 @@ Global
 		{9DDC6326-02DD-4D2A-AFAC-3BA401F2A37A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9DDC6326-02DD-4D2A-AFAC-3BA401F2A37A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9DDC6326-02DD-4D2A-AFAC-3BA401F2A37A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2413F5CC-E796-46F5-9B64-E3967FA83134}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2413F5CC-E796-46F5-9B64-E3967FA83134}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2413F5CC-E796-46F5-9B64-E3967FA83134}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2413F5CC-E796-46F5-9B64-E3967FA83134}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
