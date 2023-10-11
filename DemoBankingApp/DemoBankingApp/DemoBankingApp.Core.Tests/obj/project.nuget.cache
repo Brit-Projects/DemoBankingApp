@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qzBjvKRXBD7+0Itfdz97jLuNOUbnrdx1mh2UDjKlY5O92kqsyUS76dJKp6ayM9ypBA0LLyqrXj091yhz7dMJGA==",
+  "dgSpecHash": "bs8smttgy7oOxC3wYl+9VHODmrZRbvNSFSAcYd+nCnSOHB67fHn8h/10ujKKopA+ua0mpD7bVlLEIQXIlNrnVQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\fsiema\\source\\repos\\DemoBankingApp\\DemoBankingApp\\DemoBankingApp.Core.Tests\\DemoBankingApp.Core.Tests.csproj",
+  "projectFilePath": "C:\\Users\\fsiema\\source\\repos\\BankAppFromGit-MergingBranch\\DemoBankingApp\\DemoBankingApp\\DemoBankingApp.Core.Tests\\DemoBankingApp.Core.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\fsiema\\.nuget\\packages\\coverlet.collector\\3.1.2\\coverlet.collector.3.1.2.nupkg.sha512",
     "C:\\Users\\fsiema\\.nuget\\packages\\fluentassertions\\6.12.0\\fluentassertions.6.12.0.nupkg.sha512",

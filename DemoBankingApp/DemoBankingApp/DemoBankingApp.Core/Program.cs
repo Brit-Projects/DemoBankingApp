@@ -12,8 +12,8 @@ namespace DemoBankingApp.Core
         static void Main(string[] args)
         {
             TransactionsService accountTransactionsService = new TransactionsService();
-            accountTransactionsService.DepositMoney(50);
-            accountTransactionsService.GetBalance();
+            accountTransactionsService.DepositMoney(50, 1);
+            accountTransactionsService.GetBalance(1);
 
         }
     }

@@ -18,12 +18,13 @@ namespace DemoBankingApp.Core.Services
         public void DepositMoney(decimal amount, int accountId)
         {
             bool IsCreditAllowed = false;
+         
             foreach (KeyValuePair<int, BankAccount> pair in accountService.existingAccount.BankAccounts)
             {
                 if (pair.Key == accountId)
                 {
                     pair.Value.Balance += amount;
-                    IsAccountFound = true;
+                    IsCreditAllowed = true;
                     break;
                 }
             }

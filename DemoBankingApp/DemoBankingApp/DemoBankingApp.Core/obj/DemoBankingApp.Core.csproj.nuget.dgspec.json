@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\fsiema\\source\\repos\\DemoBankingApp\\DemoBankingApp\\DemoBankingApp.Core\\DemoBankingApp.Core.csproj": {}
+    "C:\\Users\\fsiema\\source\\repos\\BankAppFromGit-MergingBranch\\DemoBankingApp\\DemoBankingApp\\DemoBankingApp.Core\\DemoBankingApp.Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\fsiema\\source\\repos\\DemoBankingApp\\DemoBankingApp\\DemoBankingApp.Core\\DemoBankingApp.Core.csproj": {
+    "C:\\Users\\fsiema\\source\\repos\\BankAppFromGit-MergingBranch\\DemoBankingApp\\DemoBankingApp\\DemoBankingApp.Core\\DemoBankingApp.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\fsiema\\source\\repos\\DemoBankingApp\\DemoBankingApp\\DemoBankingApp.Core\\DemoBankingApp.Core.csproj",
+        "projectUniqueName": "C:\\Users\\fsiema\\source\\repos\\BankAppFromGit-MergingBranch\\DemoBankingApp\\DemoBankingApp\\DemoBankingApp.Core\\DemoBankingApp.Core.csproj",
         "projectName": "DemoBankingApp.Core",
-        "projectPath": "C:\\Users\\fsiema\\source\\repos\\DemoBankingApp\\DemoBankingApp\\DemoBankingApp.Core\\DemoBankingApp.Core.csproj",
+        "projectPath": "C:\\Users\\fsiema\\source\\repos\\BankAppFromGit-MergingBranch\\DemoBankingApp\\DemoBankingApp\\DemoBankingApp.Core\\DemoBankingApp.Core.csproj",
         "packagesPath": "C:\\Users\\fsiema\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\fsiema\\source\\repos\\DemoBankingApp\\DemoBankingApp\\DemoBankingApp.Core\\obj\\",
+        "outputPath": "C:\\Users\\fsiema\\source\\repos\\BankAppFromGit-MergingBranch\\DemoBankingApp\\DemoBankingApp\\DemoBankingApp.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
