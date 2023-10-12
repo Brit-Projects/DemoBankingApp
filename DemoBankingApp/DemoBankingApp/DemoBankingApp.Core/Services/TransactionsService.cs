@@ -1,12 +1,12 @@
 ﻿using DemoBankingApp.Core.Models;
-
+using DemoBankingApp.Core.Repositories;
 
 namespace DemoBankingApp.Core.Services
 {
     public class TransactionsService
     {
 
-        private ManageAccountService accountService;
+        private AccountsList accountService = new AccountsList();
         public TransactionsService()
         {
             ManageAccountService accountService= new ManageAccountService();
@@ -19,12 +19,13 @@ namespace DemoBankingApp.Core.Services
         {
             bool IsCreditAllowed = false;
          
-            foreach (KeyValuePair<int, BankAccount> pair in accountService.existingAccount.BankAccounts)
+            foreach (var bankAccount in accountService.GetBankAccounts())
             {
-                if (pair.Key == accountId)
+                if (bankAccount.AccountId == accountId)
                 {
-                    pair.Value.Balance += amount;
+                    bankAccount.Balance += amount;
                     IsCreditAllowed = true;
+                    GetBalance(accountId);
                     break;
                 }
             }
@@ -43,10 +44,10 @@ namespace DemoBankingApp.Core.Services
         {
             bool IsDebitAllowed = false;
 
-            foreach (KeyValuePair<int, BankAccount> pair in accountService.existingAccount.BankAccounts)
-                if (pair.Key == accountId)
+            foreach (var bankAccount in accountService.GetBankAccounts())
+                if (bankAccount.AccountId == accountId)
                 {
-                    pair.Value.Balance -= amount;
+                    bankAccount.Balance -= amount;
                     IsDebitAllowed = true;
                     break;
 
@@ -64,11 +65,11 @@ namespace DemoBankingApp.Core.Services
         {
             bool IsAccountFound = false;
 
-            foreach (KeyValuePair<int, BankAccount> pair in accountService.existingAccount.BankAccounts)
-                if (pair.Key == accountId)
+            foreach (var bankAccount in accountService.GetBankAccounts())
+                if (bankAccount.AccountId == accountId)
                 {
 
-                    Console.WriteLine($"Current Balance: {pair.Value.Balance}");
+                    Console.WriteLine($"Current Balance: {bankAccount.Balance}");
                     IsAccountFound = true;
                     break;
                 }

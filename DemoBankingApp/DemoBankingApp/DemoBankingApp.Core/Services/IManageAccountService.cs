@@ -4,6 +4,6 @@ namespace DemoBankingApp.Core.Services
 {
     public interface IManageAccountService
     {
-        IDictionary<int, BankAccount>? CreateNewAccount(int id, string name, decimal initialBalance);
+        IDictionary<int, BankAccount>? CreateNewAccount(int userId,int id, string name, decimal initialBalance);
     }
 }

@@ -3,7 +3,11 @@ namespace DemoBankingApp.Core.Models
 {
     public class BankAccount
     {
+
+
+
         public string? AccountName { get; set; }
+        public int UserId { get; set; }
         public int AccountId { get; set; }
         public int AccountNumber { get; set; }
 

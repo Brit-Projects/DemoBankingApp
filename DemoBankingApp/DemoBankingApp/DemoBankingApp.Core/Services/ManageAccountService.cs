@@ -1,15 +1,18 @@
 ﻿using DemoBankingApp.Core.Models;
+using DemoBankingApp.Core.Repositories;
 
 namespace DemoBankingApp.Core.Services
 {
     public class ManageAccountService : IManageAccountService
     {
         public ExistingAccounts existingAccount = new ExistingAccounts();
-        public IDictionary<int, BankAccount>? CreateNewAccount(int id, string name, decimal initialBalance)
+        public IDictionary<int, BankAccount>? CreateNewAccount(int userID, int id, string name, decimal initialBalance)
         {
             Random random = new Random();
+           
             BankAccount bankAccount = new BankAccount
             {
+                UserId = userID,
                 AccountId = id,
                 AccountName = name,
                 Balance = initialBalance,
