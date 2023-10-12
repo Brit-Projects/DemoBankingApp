@@ -4,45 +4,47 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DemoBankingApp.Core;
+using DemoBankingApp.Core.Models;
+using DemoBankingApp.Core.Repositories;
+using Stripe;
 
 namespace DemoBankingApp.Core.Services
 {
-    internal class DashboardService
+    public class DashboardService
     {
-        private TransactionsService transactionsService;
+        public TransactionsService transactionsService = new TransactionsService();
+        //AccountsList account = new AccountsList();
 
-        public DashboardService(TransactionsService transactionsService)
-        {
-            this.transactionsService = transactionsService;
-        }
+        //public DashboardService(TransactionsService transactionsService)
+        //{
+        //    this.transactionsService = transactionsService;
+        //}
 
-        public void DisplayDashboard()
+        public void DisplayDashboard(User user)
         {
             Console.WriteLine("Welcome to the Dashboard");
-            Console.WriteLine("1. View Transactions");
-            Console.WriteLine("2. Make a Transaction");
-            Console.WriteLine("3. Exit");
+
+            Console.WriteLine("1. View accounts and make a Transaction");
+            Console.WriteLine("2. Exit");
 
             int choice = GetUserChoice();
 
             switch (choice)
             {
+
                 case 1:
-                    ViewAccounts();
+                    DisplayUserBankAccounts(user);
+
                     break;
 
                 case 2:
-                    MakeTransaction();
-                    break;
-
-                case 3:
                     Console.WriteLine("Goodbye!");
                     break;
 
                 default:
                     Console.WriteLine("Invalid choice. Please select a valid option.");
                     break;
-                            
+
             }
 
 
@@ -53,26 +55,28 @@ namespace DemoBankingApp.Core.Services
             Console.Write("Enter your choice: ");
             if (int.TryParse(Console.ReadLine(), out int choice))
             {
-                return choice;  
+                return choice;
             }
 
             return -1;
         }
 
-        private void ViewAccounts()
-        {
-            //var transactions = transactionService.GetTransactions();
+        //private void ViewAccounts(User user)
+        //{
+        //    var accountsList = new AccountsList();
+        //    var bankAccounts = accountsList.GetBankAccounts();
 
-            //Console.WriteLine("Transaction:");
-            //foreach (var transaction in transactions)
-            //{
-            //    Console.WriteLine($"Transactoin ID: {transaction.TransactionId}");
-            //    Console.WriteLine($"Description: {transaction.Description}");
-            //    Console.WriteLine($"Amount: {transaction.Amount}");
-            //    Console.WriteLine();
+        //    var ccUserId = user.UserId;
             
-            Console.WriteLine("Feature under construction");
-        }
+
+        //    foreach (var account in bankAccounts)
+        //    {
+        //        if (account.UserId == ccUserId)
+        //        {
+        //            Console.WriteLine(account);
+        //        }
+        //    }
+        //}
 
 
         private int GetUserChoiceTransactions()
@@ -86,7 +90,7 @@ namespace DemoBankingApp.Core.Services
             return -1;
         }
 
-        private void MakeTransaction()
+        private void MakeTransaction(int accountID)
         {
 
             Console.WriteLine("Select type of transaction");
@@ -96,19 +100,31 @@ namespace DemoBankingApp.Core.Services
             Console.WriteLine("4. Exit)");
 
             int choiceTransactions = GetUserChoiceTransactions();
+            int amount;
+            
+
 
             switch (choiceTransactions)
             {
                 case 1:
-                    transactionsService.DepositMoney();
+                    
+                    Console.WriteLine("Please enter amount to deposit: ");
+                    amount = Convert.ToInt32(Console.ReadLine());
+                    transactionsService.DepositMoney(amount, accountID);
                     break;
 
                 case 2:
-                    transactionsService.WithdrawMoney();
+                    Console.WriteLine("Please enter account number: ");
+                    accountID = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine("Please enter amount to withdraw: ");
+                    amount = Convert.ToInt32(Console.ReadLine());
+                    transactionsService.WithdrawMoney(5, 01);
                     break;
 
                 case 3:
-                    transactionsService.GetBalance();
+                    Console.WriteLine("Please enter account number: ");
+                    accountID = Convert.ToInt32(Console.ReadLine());
+                    transactionsService.GetBalance(accountID);
                     break;
 
                 case 4:
@@ -119,6 +135,32 @@ namespace DemoBankingApp.Core.Services
                     Console.WriteLine("Invalid choice. Please select a valid option.");
                     break;
             }
+        }
+
+        private void DisplayUserBankAccounts(User user)
+        {
+            var accountsList = new AccountsList();
+            var bankAccounts = accountsList.GetBankAccounts();
+
+            var ccUserId = user.UserId;
+
+
+            foreach (var account in bankAccounts)
+            {
+                if (account.UserId == ccUserId)
+                {
+
+                    Console.WriteLine("Select account to use, insert account ID");
+                    int selectedID =Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine(account.AccountId);
+                    MakeTransaction(selectedID);
+
+
+                }
+            }
+        }
+
+
     }
 }
 

@@ -13,9 +13,9 @@ namespace DemoBankingApp.Console
             authentication.WelcomeUser();
 
 
-            TransactionsService accountTransactionsService = new TransactionsService();
-            accountTransactionsService.DepositMoney(50, 1);
-            accountTransactionsService.GetBalance(1);
+            //TransactionsService accountTransactionsService = new TransactionsService();
+            //accountTransactionsService.DepositMoney(50, 1);
+            //accountTransactionsService.GetBalance(1);
 
  
 

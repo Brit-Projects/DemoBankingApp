@@ -1,30 +1,33 @@
 ﻿using DemoBankingApp.Core.Models;
+using DemoBankingApp.Core.Services;
 using System.Xml.Linq;
 
 namespace DemoBankingApp.Core.Repositories
 {
     public class Authentication
     {
-        List<Users> users = new List<Users>
+        List<User> users = new List<User>
 
         {
-            new Users{ UserId= 1, UserName = "Linda Belcher", Email = "lin_belcher@burgers.com", Password = "I<3wine987" },
-            new Users{ UserId = 2, UserName = "Bob Belcher", Email = "bob_belcher@burgers.com", Password = "I<3burgers123" }
+            new User{ UserId= 1, UserName = "Linda Belcher", Email = "linda@linda.com", Password = "password" },
+            new User{ UserId = 2, UserName = "Bob Belcher", Email = "bob_belcher@burgers.com", Password = "I<3burgers123" }
         };
 
-        public List<Users> GetUsers()
+        public void AddUser(User user)
+        {
+            users.Add(user);
+        }        
+        
+        public List<User> GetUsers()
         {
             return users;
         }
 
-        public void AddUser(Users user)
-        {
-            users.Add(user);
-        }
 
-        public Users SetNewUser(int userId, string userName, string email, string password) 
+
+        public User SetNewUser(int userId, string userName, string email, string password) 
         {
-            return new Users { UserId = userId, UserName = userName, Email = email, Password = password };
+            return new User { UserId = userId, UserName = userName, Email = email, Password = password };
         }
 
 
@@ -50,7 +53,7 @@ namespace DemoBankingApp.Core.Repositories
 
             var rand = new Random();
 
-            Users newUser = SetNewUser(rand.Next(), name, email, password);
+            User newUser = SetNewUser(rand.Next(), name, email, password);
             AddUser(newUser);
         }
 
@@ -72,11 +75,15 @@ namespace DemoBankingApp.Core.Repositories
 
             var users = GetUsers();
 
-            foreach (Users user in users)
+            foreach (User user in users)
             {
                 if (user.Email == email && user.Password == password)
                 {
                     Console.WriteLine($"Welcome {user.UserName}");
+
+                    DashboardService dashboardService = new DashboardService();
+
+                    dashboardService.DisplayDashboard(user);
 
                     // todo: check if user has at least one bank account
                         // if yes: Display dashboard
@@ -148,56 +155,7 @@ namespace DemoBankingApp.Core.Repositories
 
         }
 
-        // method to choose option to register or login
 
-        // if register add user
-
-        // if log in, authenticate
-
-        /*
-        //public void welcomeUser()
-        //{
-        //    Console.WriteLine(welcomeMessage);
-        //    Console.WriteLine(optionsMessage);
-        //}
-
-        //public int parseUserOption()
-        //{
-        //    var userInput = Console.ReadLine();
-
-        //    try
-        //    {
-        //        int intInput = int.Parse(userInput);
-        //        return intInput;
-        //    }
-        //    catch (FormatException)
-        //    {
-        //        return 0;
-        //    }
-
-        //}
-
-        //public void processInput()
-        //{
-        //    int userInput = parseUserOption();
-        //    switch (userInput)
-        //    {
-        //        case 1:
-        //            Console.WriteLine("Register");
-        //            break;
-        //        case 2:
-        //            Console.WriteLine("Log in");
-        //            break;
-        //        case 0:
-        //            Console.WriteLine("Invalid input format");
-        //            break;
-        //        default:
-        //            Console.WriteLine("Invalid option");
-
-        //    }
-
-        //}
-        */
 
 
 

@@ -15,10 +15,10 @@ C:\Users\fsiema\source\repos\BankAppFromGit-MergingBranch\DemoBankingApp\DemoBan
 C:\Users\fsiema\source\repos\BankAppFromGit-MergingBranch\DemoBankingApp\DemoBankingApp\DemoBankingApp.Core\obj\Debug\net6.0\DemoBankingApp.Core.AssemblyInfoInputs.cache
 C:\Users\fsiema\source\repos\BankAppFromGit-MergingBranch\DemoBankingApp\DemoBankingApp\DemoBankingApp.Core\obj\Debug\net6.0\DemoBankingApp.Core.AssemblyInfo.cs
 C:\Users\fsiema\source\repos\BankAppFromGit-MergingBranch\DemoBankingApp\DemoBankingApp\DemoBankingApp.Core\obj\Debug\net6.0\DemoBankingApp.Core.csproj.CoreCompileInputs.cache
-C:\Users\fsiema\source\repos\BankAppFromGit-MergingBranch\DemoBankingApp\DemoBankingApp\DemoBankingApp.Core\obj\Debug\net6.0\DemoBankingApp.Core.dll
-C:\Users\fsiema\source\repos\BankAppFromGit-MergingBranch\DemoBankingApp\DemoBankingApp\DemoBankingApp.Core\obj\Debug\net6.0\refint\DemoBankingApp.Core.dll
-C:\Users\fsiema\source\repos\BankAppFromGit-MergingBranch\DemoBankingApp\DemoBankingApp\DemoBankingApp.Core\obj\Debug\net6.0\DemoBankingApp.Core.pdb
 C:\Users\fsiema\source\repos\BankAppFromGit-MergingBranch\DemoBankingApp\DemoBankingApp\DemoBankingApp.Core\bin\Debug\net6.0\DemoBankingApp.Core.deps.json
 C:\Users\fsiema\source\repos\BankAppFromGit-MergingBranch\DemoBankingApp\DemoBankingApp\DemoBankingApp.Core\bin\Debug\net6.0\DemoBankingApp.Core.dll
 C:\Users\fsiema\source\repos\BankAppFromGit-MergingBranch\DemoBankingApp\DemoBankingApp\DemoBankingApp.Core\bin\Debug\net6.0\DemoBankingApp.Core.pdb
+C:\Users\fsiema\source\repos\BankAppFromGit-MergingBranch\DemoBankingApp\DemoBankingApp\DemoBankingApp.Core\obj\Debug\net6.0\DemoBankingApp.Core.dll
+C:\Users\fsiema\source\repos\BankAppFromGit-MergingBranch\DemoBankingApp\DemoBankingApp\DemoBankingApp.Core\obj\Debug\net6.0\refint\DemoBankingApp.Core.dll
+C:\Users\fsiema\source\repos\BankAppFromGit-MergingBranch\DemoBankingApp\DemoBankingApp\DemoBankingApp.Core\obj\Debug\net6.0\DemoBankingApp.Core.pdb
 C:\Users\fsiema\source\repos\BankAppFromGit-MergingBranch\DemoBankingApp\DemoBankingApp\DemoBankingApp.Core\obj\Debug\net6.0\ref\DemoBankingApp.Core.dll
